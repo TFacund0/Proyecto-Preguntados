@@ -1,0 +1,29 @@
+					       BIENVENIDOS A PREGUNTADOS
+
+			Responde preguntas de cultura general y compite por ser el mejor jugador.
+						      Como jugar?
+
+				1- Ingrese el nombre de los usuarios que desean jugar.
+				2- Cada jugador cuenta con 5 intentos y 3 vidas.
+				3- Responde todas las preguntas y acumula puntos. 
+				4- La ronda acaba cuando el jugador se quede sin intentos.
+				5- Cuando un jugador finalice su turno, pasara al siguiente jugador.
+
+						       Intentos
+
+		Cada pregunta inicial en la ruleta constituye un intento, el cual se resta despues de ser
+				   respondido, ya sea de manera correcta o incorrecta.
+
+							Vidas
+
+	En caso de responder una incorrectamente, tiene la opcion de utilizar una de sus tres vidas para repetir
+		 la pregunta. Las vidas que sobren se suman en forma de puntos al final del juego
+
+						     Puntuaciones
+
+				* Pregunta correcta: 200 ptos
+				* Pregunta incorrecta: 0 ptos
+				* Vida: 150 ptos
+      	    Al final de cada ronda, se mostraran el ranking final de puntuaciones de todos los jugadores. 
+
+							A JUGAR
