@@ -1,3 +1,11 @@
+/**
+ * @file colaJugadores.h
+ * @brief Implementación del TDA Cola para la gestión de jugadores.
+ * 
+ * Este módulo gestiona una cola dinámica de jugadores, permitiendo la 
+ * inserción, eliminación y recorrido de los usuarios que participan en el juego.
+ */
+
 #include <stdbool.h>
 
 #include "../Actividad del Juego/Vidas.h"
@@ -7,24 +15,34 @@
 #ifndef LISTA_H
 #define LISTA_H
 
-//INTERFAZ
-
-//CARACTERISTICAS DEL JUGADOR
+/**
+ * @struct trUsuario
+ * @brief Representa a un jugador con sus estadísticas y perfil.
+ */
 typedef struct {
-	tVidas vidas;
-	tIntentos intentos;
-	tPuntaje puntuacion;
-	string nombre;
+	tVidas vidas;        /**< Contador de vidas restantes */
+	tIntentos intentos;  /**< Cantidad de intentos disponibles */
+	tPuntaje puntuacion; /**< Puntaje acumulado en la sesión */
+	string nombre;       /**< Nombre identificador del jugador */
 } trUsuario;
 
+/**
+ * @struct _nodo
+ * @brief Nodo de una lista enlazada que contiene a un usuario.
+ */
 typedef struct _nodo {
-	trUsuario usuario;
-	struct _nodo *sig;
+	trUsuario usuario;   /**< Datos del usuario */
+	struct _nodo *sig;   /**< Puntero al siguiente nodo */
 }tNodo;
 
+/**
+ * @struct tCola
+ * @brief Estructura de control para el TDA Cola.
+ * Mantiene punteros al principio y final para operaciones O(1).
+ */
 typedef struct {
-	tNodo *principio; 
-	tNodo *final;
+	tNodo *principio;    /**< Puntero al primer elemento de la cola */
+	tNodo *final;        /**< Puntero al último elemento de la cola */
 }tCola;
 
 //OPERACIONES BASICAS COLA USUARIOS

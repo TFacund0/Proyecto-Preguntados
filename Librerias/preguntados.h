@@ -1,3 +1,11 @@
+/**
+ * @file preguntados.h
+ * @brief Definiciones centrales y lógica de gestión de preguntas para el juego.
+ * 
+ * Contiene las estructuras de datos para las preguntas, prototipos de funciones 
+ * para el manejo de archivos binarios y la lógica de rondas de juego.
+ */
+
 #include "Actividad del Juego/Vidas.h"
 #include "Actividad del Juego/Intentos.h"
 #include "Actividad del Juego/Puntuacion.h"
@@ -11,22 +19,26 @@
 #ifndef PREGUNTADOS_H
 #define PREGUNTADOS_H
 
-//INTERFAZ
+// --- CONFIGURACIÓN Y CONSTANTES DEL JUEGO ---
+#define MAX_PREGUNTAS 24  /**< Cantidad de preguntas por cada archivo de categoría */
+#define CATEGORIAS 6      /**< Número total de categorías disponibles */
+#define MAX 500           /**< Tamaño máximo para búferes de texto */
 
-//CARACTERISTICAS OBJETO PREGUNTADOS
-#define MAX_PREGUNTAS 24
-#define CATEGORIAS 6
-#define MAX 500
+typedef string tvOpciones[4]; /**< Vector de 4 cadenas para las opciones de respuesta */
 
-typedef string tvOpciones[4];
-
+/**
+ * @struct trPregunta
+ * @brief Estructura que representa una pregunta individual.
+ * Se utiliza para la lectura directa desde archivos binarios (.dat).
+ */
 typedef struct {
-    int categoria;
-    string pregunta;
-    string respuestaCorrecta;
-    tvOpciones opciones;
+    int categoria;           /**< ID numérico de la categoría */
+    string pregunta;         /**< Texto de la pregunta */
+    string respuestaCorrecta;/**< Texto exacto de la respuesta correcta */
+    tvOpciones opciones;     /**< Lista de opciones posibles */
 } trPregunta;
 
+/** Matriz de control para evitar repetir preguntas durante una sesión de juego */
 bool preguntasMostradas[CATEGORIAS][MAX_PREGUNTAS];
 
 //OPERACIONES BASICAS PREGUNTADOS
