@@ -48,18 +48,15 @@ void cerrarArchivo(FILE **pArchivo) {
 void procesarArchivo(FILE **pArchivo) {
 	trPregunta pregunta;
 	
-	fread(&pregunta, sizeof(trPregunta), 1, (*pArchivo));
-	
-	while (!feof(*pArchivo)) {
+	while (fread(&pregunta, sizeof(trPregunta), 1, (*pArchivo)) == 1) {
 		leerPreguntas(pregunta);
-		fread(&pregunta, sizeof(trPregunta), 1, (*pArchivo));	
 	}
 	
 }
 
 void leerPreguntas(trPregunta pPregunta) {
 	    int j;
-	    string cat[6] = {"Entretenimiento", "Deporte", "Geografia", "Historia", "Historia", "Arte"};
+	    string cat[6] = {"Entretenimiento", "Deporte", "Geografia", "Historia", "Ciencia", "Arte"};
 	    
 		printf("\nCategoria %d: %s\n", pPregunta.categoria, cat[pPregunta.categoria-1]);
 		printf("\n\tPregunta: %s", pPregunta.pregunta);

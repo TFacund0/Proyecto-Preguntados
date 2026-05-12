@@ -158,7 +158,7 @@ void cerrarArchivo(){
  */
 void leerPreguntas(trPregunta pPregunta) {
 	    int j;
-	    string cat[6] = {"Entretenimiento", "Deporte", "Geografia", "Historia", "Historia", "Arte"};
+	    string cat[6] = {"Entretenimiento", "Deporte", "Geografia", "Historia", "Ciencia", "Arte"};
 	    
 		printf("\n\tDatos Agregados Categoria %s\n", cat[pPregunta.categoria-1]);
 	    

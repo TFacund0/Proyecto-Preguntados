@@ -60,7 +60,7 @@ void procesarCorte(FILE **pArchivo) {
 
 void cargarPreguntas(FILE **pArchivo) {
 	trPregunta pregunta;
-	string cat[6] = {"Entretenimiento", "Deporte", "Geografia", "Historia", "Historia", "Arte"};
+	string cat[6] = {"Entretenimiento", "Deporte", "Geografia", "Historia", "Ciencia", "Arte"};
 	int i, j;
 
 	printf("Categoria (1-Entretenimiento, 2-Deporte, 3-Geografia, 4-Historia, 5-Ciencia, 6-Arte): ");
