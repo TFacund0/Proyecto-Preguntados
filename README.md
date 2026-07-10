@@ -1,10 +1,10 @@
-# 🧠 Proyecto Preguntados (Console Edition)
+# Proyecto Preguntados (Console Edition)
 
 [![Language](https://img.shields.io/badge/Language-C-blue.svg)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![Course](https://img.shields.io/badge/Course-Algoritmos%20y%20Estructuras%20de%20Datos%20II-orange.svg)](https://en.wikipedia.org/wiki/Algorithms_and_Data_Structures)
 [![Year](https://img.shields.io/badge/Year-2023-green.svg)](https://github.com/TuUsuario)
 
-## 🌟 Descripción General
+## Descripción General
 
 Este proyecto es un juego de trivia tipo **"Preguntados"** desarrollado íntegramente en **C** para la terminal. Fue desarrollado en 2023 como proyecto integrador de la materia **Algoritmos y Estructuras de Datos II**.
 
@@ -16,9 +16,9 @@ A diferencia de proyectos modernos que dependen de motores gráficos o APIs exte
 
 ---
 
-## 🎮 Galería del Juego
+## Galería del Juego
 
-### 🏠 Inicio y Reglas
+### Inicio y Reglas
 El juego comienza con una bienvenida y la explicación de las reglas, estableciendo el ambiente para los jugadores.
 
 <p align="center">
@@ -26,7 +26,7 @@ El juego comienza con una bienvenida y la explicación de las reglas, establecie
   <img src="screenshots/Ingreso%20de%20Jugadores.png" width="45%" alt="Registro" />
 </p>
 
-### 🕹️ Jugabilidad
+### Jugabilidad
 Incluye una ruleta aleatoria de categorías y una interfaz de preguntas dinámica que cambia según la categoría seleccionada.
 
 <p align="center">
@@ -34,7 +34,7 @@ Incluye una ruleta aleatoria de categorías y una interfaz de preguntas dinámic
   <img src="screenshots/Preguntas%20del%20juego.png" width="45%" alt="Pregunta" />
 </p>
 
-### 🏆 Resultados y Puntuaciones
+### Resultados y Puntuaciones
 Al finalizar el turno o la partida, el sistema procesa la cola de jugadores y muestra las posiciones finales.
 
 <p align="center">
@@ -46,7 +46,7 @@ Al finalizar el turno o la partida, el sistema procesa la cola de jugadores y mu
 
 ---
 
-## 🚀 Desafíos Técnicos y Arquitectura
+## Desafíos Técnicos y Arquitectura
 
 El proyecto destaca por implementar conceptos avanzados de gestión de datos y memoria:
 
@@ -67,7 +67,7 @@ El proyecto destaca por implementar conceptos avanzados de gestión de datos y m
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 
 -   `juegoPreguntados.c`: Punto de entrada principal y orquestador del loop de juego.
 -   `Librerias/`: Módulos especializados para cada componente:
@@ -79,7 +79,7 @@ El proyecto destaca por implementar conceptos avanzados de gestión de datos y m
 
 ---
 
-## 🛠️ Instalación y Ejecución
+## Instalación y Ejecución
 
 1.  **Requisitos**: Compilador de C (GCC recomendado).
 2.  **Compilación**:
@@ -93,7 +93,7 @@ El proyecto destaca por implementar conceptos avanzados de gestión de datos y m
 
 ---
 
-## 💡 Reflexión: El Valor de la Lógica Pura
+## Reflexión: El Valor de la Lógica Pura
 
 Este proyecto fue desarrollado **sin el uso de asistentes de IA**, lo que requirió un profundo entendimiento de:
 -   Aritmética de punteros.
